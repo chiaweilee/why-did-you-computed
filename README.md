@@ -1,6 +1,10 @@
 # why-did-you-computed
 when Vue is making unnecessary computed
 
+<a href="https://npmcharts.com/compare/why-did-you-computed?minimal=true"><img src="https://img.shields.io/npm/dm/why-did-you-computed.svg" alt="Downloads"></a>
+<a href="https://www.npmjs.com/package/why-did-you-computed"><img src="https://img.shields.io/npm/v/why-did-you-computed.svg" alt="Version"></a>
+<a href="https://www.npmjs.com/package/why-did-you-computed"><img src="https://img.shields.io/npm/l/why-did-you-computed.svg" alt="License"></a>
+
 ### Computed-Caching-vs-Methods
 
 > *Computed properties are **cached based on their dependencies**. A computed property will only re-evaluate when some of its dependencies have changed.* . -- <a href="https://vuejs.org/v2/guide/computed.html#Computed-Caching-vs-Methods">vuejs.org</a>
