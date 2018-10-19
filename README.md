@@ -27,3 +27,27 @@ export default {
   }
 }
 ```
+
+### Why to avoid it?
+
+*Think about this..*
+
+```vue.js
+computed: {
+  test () {
+    // large CPU compute below
+    [...].forEach(function (a) {
+      a.forEach(function (b) {
+      if (...) {
+        ...
+      } else {
+        b.forEach(
+          ...
+          return this.rnd[0]
+        )
+      }
+      })
+    })
+  }
+}
+```
