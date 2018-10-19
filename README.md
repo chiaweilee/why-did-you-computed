@@ -51,3 +51,48 @@ computed: {
   }
 }
 ```
+
+### My resolve way (not the best)
+
+```
+npm install why-did-you-computed
+```
+
+```js
+import Vue from 'vue'
+import whyDidYouComputed from 'vue-did-you-computed'
+Vue.use(whyDidYouComputed)
+```
+
+```vue.js
+computed: {
+    test () {
+      // return this.rnd[0] // normal code
+      return this.$whyDidYouComputed(this.rnd[0])(function (rnd) {
+        // read 'usage' please
+        return rnd
+      })
+    }
+  },
+```
+
+### Usage
+
+```js
+this.$whyDidYouComputed(/* all dependencies you wanna use here */this.test1, this.test2, this.test3)
+  (function (test1, test2, test3) { // this.test1 -> argument[0], this.test2 -> argument[1] ...
+    // better ES5 function here
+    // this === null
+    // Do not use this.test
+    // Do not use Math.random, new Date()...
+    // Do not use any values out side of this function (use arguments only)
+    // keep this function pure!
+  })
+```
+
+### Pure function
+> *In computer programming, a pure function is a function that has the following properties:
+
+> *Its return value is the same for the same arguments (no variation with local static variables, non-local variables, mutable reference arguments or input streams from I/O devices).*
+
+> *Its evaluation has no side effects (no mutation of local static variables, non-local variables, mutable reference arguments or I/O streams).*
