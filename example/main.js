@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import test from '@'
-test()
+import whyDidYouComputed from '@'
+Vue.use(whyDidYouComputed)
 
 Vue.config.productionTip = false
 
