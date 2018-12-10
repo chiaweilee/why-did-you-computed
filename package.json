@@ -31,17 +31,17 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
-    "@cypress/webpack-preprocessor": "^3.0.0",
+    "@cypress/webpack-preprocessor": "^4.0.2",
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-e2e-cypress": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-plugin-pwa": "^3.0.5",
     "@vue/cli-plugin-unit-mocha": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
-    "@vue/eslint-config-standard": "^3.0.5",
+    "@vue/eslint-config-standard": "^4.0.0",
     "@vue/test-utils": "^1.0.0-beta.20",
     "chai": "^4.1.2",
-    "lint-staged": "^7.3.0",
+    "lint-staged": "^8.1.0",
     "vue-template-compiler": "^2.5.17"
   }
 }
