@@ -1,5 +1,7 @@
 ## Why-did-you-computed
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/chiaweilee/....svg)](https://greenkeeper.io/)
+
 ### What happened?
 
 see this.
